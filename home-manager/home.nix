@@ -22,18 +22,18 @@
         '';
         buildInputs = oa.buildInputs ++ [ harfbuzz ];
       }))
-      (pkgs.runCommand "artofwar-man" {
-        source = ./manpages/artofwar.3;
-      } ''
-        mkdir -p $out/share/man/man3
-        cp "$source" "$out/share/man/man3/artofwar.3"
-      '')
-      (pkgs.runCommand "taoteching-man" {
-        source = ./manpages/taoteching.3;
-      } ''
-        mkdir -p $out/share/man/man3
-        cp "$source" "$out/share/man/man3/taoteching.3"
-      '') 
+      # (pkgs.runCommand "artofwar-man" {
+        # source = ./manpages/artofwar.3;
+      # } ''
+        # mkdir -p $out/share/man/man3
+        # cp "$source" "$out/share/man/man3/artofwar.3"
+      # '')
+      # (pkgs.runCommand "taoteching-man" {
+        # source = ./manpages/taoteching.3;
+      # } ''
+        # mkdir -p $out/share/man/man3
+        # cp "$source" "$out/share/man/man3/taoteching.3"
+      # '') 
     ];
 
     # Add locations to PATH
