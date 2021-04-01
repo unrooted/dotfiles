@@ -15,6 +15,9 @@
     killall
     usbutils
     ntfs3g
+    ripgrep
+    ripgrep-all
+    exa
     acpilight
 
     # Haskell stuff
@@ -24,20 +27,13 @@
     hlint
     haskell-language-server
 
-    # Rice
-    polybarFull
-    dunst
-    rofi
-
     # Terminal emulators
-    xterm
+    st
     alacritty
 
-    # Text editors
+    # Text stuff
     vim
     emacs
-    xclip
-    neovim
 
     # File managers
     ranger
@@ -46,14 +42,26 @@
     # Browsers
     firefox
     chromium
+    surf
+
+    # window managers
+    xmobar
+    picom
+    dmenu
+    stalonetray
+    xfce.xfce4-power-manager
+    feh
     
     # Other
-    sassc
-    ruby
     meson
     ncmpcpp
     vlc
     mpv
+    mpd
+    flameshot
+    zathura
+    udiskie
+    python39
 
   ];
 }
